@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Teller App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Choisissez une catégorie de blague</h1>
+      <!-- Dropdown pour sélectionner une catégorie -->
+      <div class="choice">
+        <label for="jokeType">Sélectionnez une catégorie :</label>
+        <select id="jokeType">
+          <option value="global">Global</option>
+          <option value="dev">Dev</option>
+          <option value="dark">Dark</option>
+          <option value="limit">Limit</option>
+          <option value="beauf">Beauf</option>
+          <option value="blondes">Blondes</option>
+        </select>
+
+        <!-- Bouton pour obtenir une blague -->
+        <button id="getJokeBtn">Obtenir une blague</button>
+      </div>
+      <!-- Section pour afficher la blague -->
+      <div class="joke">
+        <h2>Votre blague :</h2>
+        <p id="jokeOutput"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
